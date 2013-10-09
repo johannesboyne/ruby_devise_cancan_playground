@@ -639,3 +639,308 @@ Processing by Devise::SessionsController#new as HTML
   Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/bundler/gems/devise-49aebde435cf/app/views/devise/shared/_links.erb (0.4ms)
   Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/bundler/gems/devise-49aebde435cf/app/views/devise/sessions/new.html.erb within layouts/application (14.8ms)
 Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 150ms (Views: 135.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/base.css?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/holder.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.33.1 at 2013-10-09 09:20:25 +0000
+
+
+Started GET "/admins/sign_in" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 83ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/base.css?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/holder.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.33.1 at 2013-10-09 09:21:19 +0000
+
+
+Started GET "/admins/sign_in" for 192.168.33.1 at 2013-10-09 09:22:01 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 88ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 192.168.33.1 at 2013-10-09 09:22:01 +0000
+
+
+Started GET "/assets/base.css?body=1" for 192.168.33.1 at 2013-10-09 09:22:01 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/holder.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.33.1 at 2013-10-09 09:22:02 +0000
+
+
+Started GET "/admins/sign_in" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 91ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/base.css?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/holder.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.33.1 at 2013-10-09 09:54:14 +0000
+
+
+Started GET "/" for 192.168.33.1 at 2013-10-09 09:54:19 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.33.1 at 2013-10-09 09:57:53 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 192.168.33.1 at 2013-10-09 09:57:58 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 76ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.33.1 at 2013-10-09 09:58:00 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.0ms)
