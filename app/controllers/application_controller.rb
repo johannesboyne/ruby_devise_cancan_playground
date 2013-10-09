@@ -10,4 +10,7 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit! }
   end
 
+  def current_ability
+    @current_ability ||= Ability.new(current_user || current_admin)
+  end
 end

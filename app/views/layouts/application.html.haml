@@ -31,4 +31,13 @@
         %h1
           =h yield(:title)
 
+      - if @status
+        %h1
+          Page Status
+        %p
+          The page Status is:
+          %p= @status.status.to_s
+          = link_to "View Status", status_index_path
+
+
       = yield

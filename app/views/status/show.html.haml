@@ -1,0 +1,5 @@
+%span
+  Current-Status:
+%span= @status.status
+- if can? :update, @status
+  = link_to "Edit", edit_status_path(@status)
