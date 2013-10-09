@@ -1,0 +1,57 @@
+  [1m[36m (5.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (5.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20130710201257)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "password_salt" varchar(255), "confirmation_token" varchar(255), "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar(255), "failed_attempts" integer DEFAULT 0, "unlock_token" varchar(255), "locked_at" datetime, "authentication_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_authentication_token" ON "users" ("authentication_token")
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130710201257"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+Migrating to DeviseCreateAdmins (20130710202404)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130710202404"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'qKuddSBu8Vyqb6M5xpM2' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'Jvu9FiqJWGzJjhsZGip3' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (13.2ms)[0m  [1mINSERT INTO "users" ("authentication_token", "confirmation_sent_at", "confirmation_token", "created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "qKuddSBu8Vyqb6M5xpM2"], ["confirmation_sent_at", Wed, 09 Oct 2013 07:55:14 UTC +00:00], ["confirmation_token", "Jvu9FiqJWGzJjhsZGip3"], ["created_at", Wed, 09 Oct 2013 07:55:14 UTC +00:00], ["email", "user@test.com"], ["encrypted_password", "$2a$10$tpY9EcxDi2PJk3n9ptEsRu2g15LCdZ3RQWHb.ZDHJhgnWaC5Itl1e"], ["updated_at", Wed, 09 Oct 2013 07:55:14 UTC +00:00]]
+  Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/bundler/gems/devise-49aebde435cf/app/views/devise/mailer/confirmation_instructions.html.erb (3.0ms)
+
+Sent mail to user@test.com (19.6ms)
+Date: Wed, 09 Oct 2013 07:55:15 +0000
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@test.com
+Message-ID: <52550be376f73_44473f828d6bbe7c37e0@precise64.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@test.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Jvu9FiqJWGzJjhsZGip3">Confirm my account</a></p>
+
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  UPDATE "users" SET "confirmation_token" = ?, "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["confirmation_token", nil], ["confirmed_at", Wed, 09 Oct 2013 07:55:15 UTC +00:00], ["updated_at", Wed, 09 Oct 2013 07:55:15 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mAdmin Exists (1.7ms)[0m  [1mSELECT 1 AS one FROM "admins" WHERE "admins"."email" = 'admin@test.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "admins" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Wed, 09 Oct 2013 07:55:15 UTC +00:00], ["email", "admin@test.com"], ["encrypted_password", "$2a$10$Qx1AjAbADLypFRv1I9CHG.VRXK1X4fQTkPs.4ohCp4tRW4tZ/cB/m"], ["updated_at", Wed, 09 Oct 2013 07:55:15 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
